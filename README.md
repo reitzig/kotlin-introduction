@@ -1,7 +1,7 @@
 # A Hands-on Introduction to Kotlin
 
-This repository contains code along which to present Kotlin to other programmers familiar 
-with Java. The main example are binary trees.
+This repository contains code along which to present Kotlin to other programmers who are
+familiar with Java. The main example are binary trees.
 
 The goal is to make people excited about Kotlin so they want to learn it, 
 not so much to teach them right now.

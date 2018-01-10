@@ -7,13 +7,15 @@ import org.kintro.goal.KTree.*
  *
  * Step 1: Implement minimal sealed+data classes.
  *         Show example value and print.
- * Step 2: Show automatically meaningful ==.
- * Step 3: Show that when over KTree is exhaustive.
- * Step 4: Implement flatMap as higher-order function.
+ * Step 2: Show automatically meaningful `==`.
+ * Step 3: Show that `when` over `KTree` is exhaustive.
+ * Step 4: Implement `flatMap` as higher-order function.
  *         Show example usage.
- * Step 5: Implement KTree.size in terms of flatMap.
- * Optional: Show that Leaf(null) works (--> Nothing? type inferred)
- * Step 6: Demonstrate that KTree<Int> can't take null values; have to set both children.
+ * Step 5: Implement `KTree.size` in terms of flatMap.
+ * Optional: Show that `Leaf(null)` works (--> Nothing? type inferred)
+ * Step 6: Demonstrate that we _can_ create `KTree<Int?>`, and how to prevent with `T: Any`
+ * Optional: Why did `value.toString()` work even with `T: Any?`? -- extension methods on `Any?`
+ * Step 7: Demonstrate that `KTree<Int>` can't take null values; have to set both children.
  *
  * --> KTree2.kt
  */
