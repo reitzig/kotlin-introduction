@@ -20,6 +20,6 @@ public class JMain {
 
         System.out.println(example);
 
-        System.out.println(new JTree<>(null, null, null));
+        //System.out.println(new JTree<>(null, null, null));
     }
 }

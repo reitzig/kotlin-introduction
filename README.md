@@ -7,12 +7,14 @@ The goal is to make people excited about Kotlin so they want to learn it,
 not so much to teach them right now.
 Therefore, this introduction bothers less with elementary syntax than e.g.
     [kotlin-workshop](https://github.com/JetBrains/kotlin-workshop)
-does. 
+does. Instead we demonstrate some (pseudo)-real code and discover features 
+of Kotlin along the way.
 
 We cover the following features of Kotlin:
 
  * Basic syntax (incidental and thus incomplete; coverage depends on presenter)
- * Null safety
+ * Null safety through optionals
+ * Type inferrer
  * Optional parameters
  * Named parameters
  * Lambdas & higher-order functions
@@ -46,11 +48,13 @@ We cover the following features of Kotlin:
  4. Demonstrate using Kotlin from Java following the steps outlined in
         [`TreeTest.java`]().
         
+You should plan roughly one hour including questions.
+        
 ## More Resources
 
 For _learning_ Kotlin, I recommend:
 
  * [Official Workshop](https://github.com/JetBrains/kotlin-workshop)
  * [Kotlin Koans](https://github.com/Kotlin/kotlin-koans), 
-   also [online](https://try.kotlinlang.org)
+   also [in the browser](https://try.kotlinlang.org)
  * [\[kotlin\] on Stack Overflow](https://stackoverflow.com/questions/tagged/kotlin)

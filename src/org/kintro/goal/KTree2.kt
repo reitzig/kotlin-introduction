@@ -6,7 +6,7 @@ import org.kintro.goal.KTree2.*
  *
  * Step 1: Make children optional; show examples
  * Step 2: Add default parameters; show examples
- * Step 3: Demonstrate how navigating the tree is now more noisy.
+ * Step 3: Demonstrate how navigating the tree is now more noisy as each child could be null.
  */
 
 sealed class KTree2<T: Any> {
