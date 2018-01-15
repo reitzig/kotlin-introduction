@@ -31,22 +31,22 @@ We cover the following features of Kotlin:
 ## Roadmap
 
  1. Start by showing 
-        [`JTree.java`]() 
+        [`JTree.java`](https://github.com/reitzig/kotlin-introduction/blob/master/src/org/kintro/prepared/JTree.java) 
     and 
-        [`JMain.java`]() 
+        [`JMain.java`](https://github.com/reitzig/kotlin-introduction/blob/master/src/org/kintro/prepared/JMain.java) 
     -- this is just to get people up to speed about what the goal is.
     
  2. Live-code the Kotlin tree implementation.
     Follow the steps outlined in
-        [`Ktree.kt`]()
+        [`Ktree.kt`](https://github.com/reitzig/kotlin-introduction/blob/master/src/org/kintro/goal/KTree.kt)
     and then
-        [`KTree2.kt`]().
+        [`KTree2.kt`](https://github.com/reitzig/kotlin-introduction/blob/master/src/org/kintro/goal/KTree2.kt).
         
  3. Demonstrate using Java from Kotlin following the steps outlined in
-        [`PersonTest.kt`]().
+        [`PersonTest.kt`](https://github.com/reitzig/kotlin-introduction/blob/master/src/org/kintro/goal/PersonTest.kt).
         
  4. Demonstrate using Kotlin from Java following the steps outlined in
-        [`TreeTest.java`]().
+        [`TreeTest.java`](https://github.com/reitzig/kotlin-introduction/blob/master/src/org/kintro/goal/TreeTest.java).
         
 You should plan roughly one hour including questions.
         
