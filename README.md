@@ -58,3 +58,7 @@ For _learning_ Kotlin, I recommend:
  * [Kotlin Koans](https://github.com/Kotlin/kotlin-koans), 
    also [in the browser](https://try.kotlinlang.org)
  * [\[kotlin\] on Stack Overflow](https://stackoverflow.com/questions/tagged/kotlin)
+ 
+ ### Acknowledgements
+ 
+ This introduction was developed while preparing an internal training event for [Telepaxx Medical Archiving](https://telepaxx.de).
