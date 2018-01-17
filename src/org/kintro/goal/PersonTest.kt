@@ -31,8 +31,10 @@ fun main(args: Array<String>) {
     val incognito = JPerson(null, 99, true)
     println(incognito.name.length)
 
-    val personTree = Node(JPerson("John", 37, false),
-            Leaf(JPerson("Mary", 28, true)),
-            Leaf(JPerson("Jane", 71, true)))
+    val personTree = Node(
+        JPerson("John", 37, false),
+        Leaf(JPerson("Mary", 28, true)),
+        Leaf(JPerson("Jane", 71, true))
+    )
     println(personTree.flatMap { it.name })
 }

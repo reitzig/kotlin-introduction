@@ -22,7 +22,7 @@ import org.kintro.goal.KTree.*
 
 sealed class KTree<T> {
     abstract var value: T
-    abstract fun <U> flatMap(f: (T) -> U) : List<U>
+    abstract fun <U> flatMap(f: (T) -> U): List<U>
 
     val size: Int
         get() = flatMap { true }.size
@@ -49,8 +49,8 @@ sealed class KTree<T> {
     }
 }
 
-fun <T> isInner(t: KTree<T>) : Boolean {
-    return when ( t ) {
+fun <T> isInner(t: KTree<T>): Boolean {
+    return when (t) {
         is Node -> true
         is Leaf -> false
         else -> false
@@ -58,11 +58,14 @@ fun <T> isInner(t: KTree<T>) : Boolean {
 }
 
 fun main(args: Array<String>) {
-    val example = Node(77,
-            Node(42,
-                    Leaf(7),
-                    Leaf(11)),
-            Leaf(13)
+    val example = Node(
+        77,
+        Node(
+            42,
+            Leaf(7),
+            Leaf(11)
+        ),
+        Leaf(13)
     )
 
     println(example)
@@ -70,7 +73,7 @@ fun main(args: Array<String>) {
     println(Leaf(42) == Leaf(42))
     println(Leaf(42) == Leaf(43))
 
-    val halves = example.flatMap { it.toDouble()/2 }
+    val halves = example.flatMap { it.toDouble() / 2 }
     println(halves)
     println(halves.fold(0.0, { acc: Double, fl: Double -> acc + fl }))
 

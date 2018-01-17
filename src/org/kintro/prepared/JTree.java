@@ -45,16 +45,16 @@ public final class JTree<T> {
 
     @Override
     public String toString() {
-        if ( this.left == null && this.right == null ) {
+        if (this.left == null && this.right == null) {
             return this.value.toString();
         }
 
         String left = "_";
-        if ( this.left != null ) {
+        if (this.left != null) {
             left = this.left.toString();
         }
         String right = "_";
-        if ( this.right != null ) {
+        if (this.right != null) {
             right = this.right.toString();
         }
 
@@ -63,10 +63,10 @@ public final class JTree<T> {
 
     @Override
     public boolean equals(Object obj) {
-        if ( obj == null || !(obj instanceof JTree) ) {
+        if (obj == null || !(obj instanceof JTree)) {
             return false;
         } else {
-            JTree other = (JTree)obj;
+            JTree other = (JTree) obj;
             return value.equals(other.value)
                     && left.equals(other.left)
                     && right.equals(other.right);

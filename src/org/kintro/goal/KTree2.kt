@@ -9,11 +9,15 @@ import org.kintro.goal.KTree2.*
  * Step 3: Demonstrate how navigating the tree is now more noisy as each child could be null.
  */
 
-sealed class KTree2<T: Any> {
+sealed class KTree2<T : Any> {
     abstract var value: T
-    abstract fun <U> flatMap(f: (T) -> U) : List<U>
+    abstract fun <U> flatMap(f: (T) -> U): List<U>
 
-    data class Node<T: Any>(override var value: T, var left: KTree2<T>? = null, var right: KTree2<T>? = null) : KTree2<T>() {
+    data class Node<T : Any>(
+        override var value: T,
+        var left: KTree2<T>? = null,
+        var right: KTree2<T>? = null
+    ) : KTree2<T>() {
         override fun toString(): String {
             return "($value, $left, $right)"
         }
@@ -26,7 +30,7 @@ sealed class KTree2<T: Any> {
         }
     }
 
-    data class Leaf<T: Any>(override var value: T) : KTree2<T>() {
+    data class Leaf<T : Any>(override var value: T) : KTree2<T>() {
         override fun toString(): String {
             return value.toString()
         }
@@ -39,15 +43,15 @@ sealed class KTree2<T: Any> {
 
 fun main(args: Array<String>) {
     val pseudoLeaf = Node(7, Leaf(3), null)
-    print(pseudoLeaf)
+    println(pseudoLeaf)
 
     val pseudoLeaf2 = Node(7, Leaf(3))
-    print(pseudoLeaf2)
+    println(pseudoLeaf2)
 
     val leftist = Node(7, left = Leaf(3))
-    print(leftist)
+    println(leftist)
     val rightist = Node(7, right = Leaf(3))
-    print(rightist)
+    println(rightist)
 
     //println(rightist.right.flatMap { 1 })
 }
