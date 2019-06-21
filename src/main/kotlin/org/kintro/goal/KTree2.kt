@@ -1,6 +1,7 @@
 package org.kintro.goal
 
-import org.kintro.goal.KTree2.*
+import org.kintro.goal.KTree2.Leaf
+import org.kintro.goal.KTree2.Node
 
 /* Continuation of KTree.kt
  *

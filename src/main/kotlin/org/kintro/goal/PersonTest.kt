@@ -1,6 +1,7 @@
 package org.kintro.goal
 
-import org.kintro.goal.KTree.*
+import org.kintro.goal.KTree.Leaf
+import org.kintro.goal.KTree.Node
 import org.kintro.prepared.JPerson
 
 /*
@@ -17,7 +18,7 @@ import org.kintro.prepared.JPerson
  */
 
 val JPerson.isOld: Boolean
-    get() = this.age >= 30;
+    get() = this.age >= 30
 
 fun main(args: Array<String>) {
     val john = JPerson("John Doe", 37, false)

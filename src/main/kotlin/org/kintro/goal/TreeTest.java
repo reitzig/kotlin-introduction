@@ -4,7 +4,8 @@ import kotlin.jvm.functions.Function1;
 
 import java.util.List;
 
-import static org.kintro.goal.KTree.*;
+import static org.kintro.goal.KTree.Leaf;
+import static org.kintro.goal.KTree.Node;
 
 /*
  * Example to show how to call Kotlin from Java.

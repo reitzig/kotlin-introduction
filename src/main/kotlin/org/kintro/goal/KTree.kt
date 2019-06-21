@@ -1,6 +1,7 @@
 package org.kintro.goal
 
-import org.kintro.goal.KTree.*
+import org.kintro.goal.KTree.Leaf
+import org.kintro.goal.KTree.Node
 
 /*
  * Main example.
