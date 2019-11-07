@@ -4,7 +4,7 @@ package org.kintro.prepared;
  * For reference, a Java implementation of binary trees.
  * Note the boilerplate.
  *
- * Note that the `J` and `K` prefix are not by convention; we only use
+ * Note that the `J` and `K` prefix are not Kotlin convention; we only use
  * them here to see clearly which type is implemented in which language.
  */
 
@@ -63,13 +63,13 @@ public final class JTree<T> {
 
     @Override
     public boolean equals(Object obj) {
-        if (obj == null || !(obj instanceof JTree)) {
+        if (!(obj instanceof JTree)) {
             return false;
         } else {
             JTree other = (JTree) obj;
             return value.equals(other.value)
-                    && left.equals(other.left)
-                    && right.equals(other.right);
+                    && (left == null ? other.left == null : left.equals(other.left))
+                    && (right == null ? other.right == null : right.equals(other.right));
         }
     }
 }

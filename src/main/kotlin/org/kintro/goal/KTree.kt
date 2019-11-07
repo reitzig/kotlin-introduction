@@ -1,3 +1,5 @@
+//@file:JvmName("TreeFunctions")
+
 package org.kintro.goal
 
 import org.kintro.goal.KTree.Leaf
@@ -7,7 +9,8 @@ import org.kintro.goal.KTree.Node
  * Main example.
  *
  * Step 1: Implement minimal sealed+data classes.
- *         Show example value and print.
+ *         Show example value and print
+ *         (Use REPL! Don't forget the import.)
  * Step 2: Show automatically meaningful `==`.
  * Step 3: Show that `when` over `KTree` is exhaustive.
  * Step 4: Implement `flatMap` as higher-order function.
@@ -54,33 +57,6 @@ fun <T> isInner(t: KTree<T>): Boolean {
     return when (t) {
         is Node -> true
         is Leaf -> false
-        else -> false
     }
 }
 
-fun main(args: Array<String>) {
-    val example = Node(
-        77,
-        Node(
-            42,
-            Leaf(7),
-            Leaf(11)
-        ),
-        Leaf(13)
-    )
-
-    println(example)
-
-    println(Leaf(42) == Leaf(42))
-    println(Leaf(42) == Leaf(43))
-
-    val halves = example.flatMap { it.toDouble() / 2 }
-    println(halves)
-    println(halves.fold(0.0, { acc: Double, fl: Double -> acc + fl }))
-
-    println(example.size)
-
-    val nullLeaf = Leaf(null)
-    println(nullLeaf)
-    //val nulled = Leaf<Int>(null)
-}

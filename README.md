@@ -31,22 +31,22 @@ We cover the following features of Kotlin:
 ## Roadmap
 
  1. Start by showing 
-        [`JTree.java`](https://github.com/reitzig/kotlin-introduction/blob/master/src/org/kintro/prepared/JTree.java) 
+        [`JTree.java`](src/main/java/org/kintro/prepared/JTree.java) 
     and 
-        [`JMain.java`](https://github.com/reitzig/kotlin-introduction/blob/master/src/org/kintro/prepared/JMain.java) 
+        [`JTreeTest.java`](src/test/java/org/kintro/prepared/JTreeTest.java) 
     -- this is just to get people up to speed about what the goal is.
     
  2. Live-code the Kotlin tree implementation.
     Follow the steps outlined in
-        [`Ktree.kt`](https://github.com/reitzig/kotlin-introduction/blob/master/src/org/kintro/goal/KTree.kt)
+        [`Ktree.kt`](src/org/kintro/goal/KTree.kt)
     and then
-        [`KTree2.kt`](https://github.com/reitzig/kotlin-introduction/blob/master/src/org/kintro/goal/KTree2.kt).
+        [`KTree2.kt`](src/org/kintro/goal/KTree2.kt).
         
  3. Demonstrate using Java from Kotlin following the steps outlined in
-        [`PersonTest.kt`](https://github.com/reitzig/kotlin-introduction/blob/master/src/org/kintro/goal/PersonTest.kt).
+        [`PersonTest.kt`](src/org/kintro/goal/PersonTest.kt).
         
  4. Demonstrate using Kotlin from Java following the steps outlined in
-        [`TreeTest.java`](https://github.com/reitzig/kotlin-introduction/blob/master/src/org/kintro/goal/TreeTest.java).
+        [`TreeTest.java`](src/org/kintro/goal/TreeTest.java).
         
 You should plan roughly one hour including questions.
         
@@ -57,8 +57,12 @@ For _learning_ Kotlin, I recommend:
  * [Official Workshop](https://github.com/JetBrains/kotlin-workshop)
  * [Kotlin Koans](https://github.com/Kotlin/kotlin-koans), 
    also [in the browser](https://try.kotlinlang.org)
+ * [Official Reference](https://kotlinlang.org/docs/reference/)
  * [\[kotlin\] on Stack Overflow](https://stackoverflow.com/questions/tagged/kotlin)
  
- ### Acknowledgements
+### Acknowledgements
  
- This introduction was developed while preparing an internal training event for [Telepaxx Medical Archiving](https://telepaxx.de).
+This introduction was developed while preparing an internal training event for 
+    [Telepaxx Medical Archiving](https://telepaxx.de)
+and reworked for a similar session at
+    [codecentric](https://codecentric.de).

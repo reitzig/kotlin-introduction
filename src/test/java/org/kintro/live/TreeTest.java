@@ -1,5 +1,5 @@
 package org.kintro.live;
 
-public class TreeTest {
+class TreeTest {
     // Implement step 4 here
 }

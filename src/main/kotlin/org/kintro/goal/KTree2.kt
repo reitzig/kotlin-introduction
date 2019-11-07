@@ -1,8 +1,5 @@
 package org.kintro.goal
 
-import org.kintro.goal.KTree2.Leaf
-import org.kintro.goal.KTree2.Node
-
 /* Continuation of KTree.kt
  *
  * Step 1: Make children optional; show examples
@@ -40,19 +37,4 @@ sealed class KTree2<T : Any> {
             return listOf(f(value))
         }
     }
-}
-
-fun main(args: Array<String>) {
-    val pseudoLeaf = Node(7, Leaf(3), null)
-    println(pseudoLeaf)
-
-    val pseudoLeaf2 = Node(7, Leaf(3))
-    println(pseudoLeaf2)
-
-    val leftist = Node(7, left = Leaf(3))
-    println(leftist)
-    val rightist = Node(7, right = Leaf(3))
-    println(rightist)
-
-    //println(rightist.right.flatMap { 1 })
 }

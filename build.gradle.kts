@@ -1,7 +1,5 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
-    kotlin("jvm") version "1.3.40"
+    kotlin("jvm") version "1.3.50"
 }
 
 repositories {
@@ -9,21 +7,38 @@ repositories {
 }
 
 dependencies {
-    implementation(kotlin("stdlib-jdk8"))
+    implementation(kotlin("stdlib"))
+    compileOnly("org.jetbrains", "annotations", "18.0.0")
 
     testImplementation(kotlin("test-junit5"))
-    testImplementation("com.nhaarman.mockitokotlin2", "mockito-kotlin", "2.1.0")
-    testRuntimeOnly("org.junit.jupiter", "junit-jupiter-engine", "5.0.0")
+    testRuntimeOnly("org.junit.jupiter", "junit-jupiter-engine", "5.5.2")
+
+    // IDEA needs those:
+    testCompileOnly("org.junit.jupiter", "junit-jupiter-api", "5.5.2")
+    testCompileOnly("org.junit.jupiter", "junit-jupiter-params", "5.5.2")
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 }
 
 tasks {
-    withType<KotlinCompile> {
+    compileKotlin {
         kotlinOptions {
             jvmTarget = "11"
         }
     }
 
-    withType<Test> {
+    compileTestKotlin {
+        kotlinOptions {
+            jvmTarget = "11"
+        }
+    }
+
+    test {
         useJUnitPlatform()
+
+        testLogging.showExceptions = true
     }
 }
